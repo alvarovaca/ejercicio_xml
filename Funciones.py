@@ -34,6 +34,24 @@ def CochesPorConcesionario(doc,concesionario):
         coches.append(elem1+" "+elem)
     return coches
 
+#Ejercicio 4.
+
+def EnQueConcesionario(modelo,marca,doc):
+    coche=marca+" "+modelo
+    nombres=[]
+    ciudades=[]
+    concesionarios=doc.xpath("/concesionarios/concesionario")
+    for i in concesionarios:
+        coches=[]
+        modelos=i.xpath("./coches/coche/modelo/text()")
+        marcas=i.xpath("./coches/coche/marca/text()")
+        for elem,elem1 in zip(modelos,marcas):
+            coches.append(elem1+" "+elem)
+        if coche in coches:
+            nombres.append(i.xpath("./nombre/text()"))
+            ciudades.append(i.xpath("./ciudad/text()"))
+    return nombres,ciudades
+
 #Funciones extra.
 
 def ValidarConcesionario(doc,concesionario):

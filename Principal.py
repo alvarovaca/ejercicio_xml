@@ -72,17 +72,23 @@ while True:
         print()
     elif opcion==4:
         print()
-        
+        print("------------------")
+        print("BUSCADOR DE COCHES")
+        print("------------------")
         print()
-        print("----------")
-        print("")
-        print("----------")
+        modelo=input("Introduce un modelo de coche: ")
+        marca=input("Introduce una marca de coche: ")
         print()
-        
+        concesionarios,ciudades=EnQueConcesionario(modelo,marca,doc)
+        if len(concesionarios)>0 and len(ciudades)>0:
+            print("El coche introducido se ha encontrado en los siguientes concesionarios:")
+            print()
+            for elem, elem1 in zip(concesionarios,ciudades):
+                print(elem[0], "------", elem1[0])
+        else:
+            print("No se ha podido encontrar el coche introducido.")
         print()
     elif opcion==5:
-        print()
-        
         print()
         print("-------------------")
         print("")
