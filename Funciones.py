@@ -11,16 +11,16 @@ def ListarCoches(doc):
     velocidades=doc.xpath("//velmax/text()")
     coches=[]
     for elem,elem1 in zip(modelos,marcas):
-        coches.append(elem+elem1)
+        coches.append(elem1+" "+elem)
     return coches, potencias, puertas, precios, co2s, consumos, velocidades
 
 #Ejercicio 2.
 
 def ContarConcesionarios(doc):
-    concesionarios=doc.xpath("/concesionarios")
+    concesionarios=doc.xpath("/concesionarios/concesionario")
     concesionariosmastres=[]
     for i in concesionarios:
-        if len(i.xpath("./coches"))>3:
+        if len(i.xpath("./coches/coche"))>3:
             concesionariosmastres.append(i.xpath("./nombre/text()"))
     return concesionariosmastres
 
@@ -31,11 +31,15 @@ def CochesPorConcesionario(doc,concesionario):
     marcas=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca/text()"%concesionario)
     coches=[]
     for elem,elem1 in zip(modelos,marcas):
-        coches.append(elem+elem1)
+        coches.append(elem1+" "+elem)
     return coches
 
 #Funciones extra.
 
 def ValidarConcesionario(doc,concesionario):
     if concesionario in doc.xpath("/concesionarios/concesionario/nombre/text()"):
+        return True
+
+def ValidarSioNo(siono):
+    if siono=="S" or siono=="N":
         return True
