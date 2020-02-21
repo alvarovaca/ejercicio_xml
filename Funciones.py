@@ -12,12 +12,12 @@ def ListarCoches(doc):
             cochesnorepetidos.append(i)
     return cochesnorepetidos
 
-#Ejercicio 2
+#Ejercicio 2.
 
 def ContarConcesionarios(doc):
-    return len(doc.xpath("/concesionarios"))
+    return len(doc.xpath("/concesionarios[count(coches)>3]"))
 
-#Ejercicio 3
+#Ejercicio 3.
 
 def CochesPorConcesionario(doc,concesionario):
     modelos=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/modelo/text()"%concesionario)
