@@ -11,3 +11,17 @@ def ListarCoches(doc):
         if i not in cochesnorepetidos:
             cochesnorepetidos.append(i)
     return cochesnorepetidos
+
+#Ejercicio 2
+
+def ContarConcesionarios(doc):
+    return len(doc.xpath("/concesionarios"))
+
+#Ejercicio 3
+
+def CochesPorConcesionario(doc,concesionario):
+    modelos=doc.xpath("/concesionarios/concesionario/nombre[text()='%s']/../coches/coche/modelo/text()"%concesionario)
+    marcas=doc.xpath("/concesionarios/concesionario/nombre[text()='%s']/../coches/coche/marca/text()"%concesionario)
+    coches=[]
+    for elem,elem1 in zip(modelos,marcas):
+        coches.append(elem+elem1)
