@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionarios>
+    <concesionario id="1">
+        <nombre>Talleres Chapauto S.A.</nombre>
+        <ciudad>Madrid</ciudad>
+        <coches>
+            <coche>
+                <modelo>Huracán 2014</modelo>
+                <marca>Lamborghini</marca>
+                <potencia>610</potencia>
+                <puertas>2</puertas>
+                <precio>230775</precio>
+                <co2>290</co2>
+                <consumo>12.5</consumo>
+                <velmax>325</velmax>
+            </coche>
+            <coche>
+                <modelo>458 Italia</modelo>
+                <marca>Ferrari</marca>
+                <potencia>570</potencia>
+                <puertas>2</puertas>
+                <precio>230561</precio>
+                <co2>307</co2>
+                <consumo>13.7</consumo>
+                <velmax>325</velmax>
+            </coche>
+            <coche>
+                <modelo>Fiesta ST</modelo>
+                <marca>Ford</marca>
+                <potencia>200</potencia>
+                <puertas>5</puertas>
+                <precio>16560</precio>
+                <co2>140</co2>
+                <consumo>6.9</consumo>
+                <velmax>232</velmax>
+            </coche>
+            <coche>
+                <modelo>911</modelo>
+                <marca>Porsche</marca>
+                <potencia>385</potencia>
+                <puertas>2</puertas>
+                <precio>120458</precio>
+                <co2>241</co2>
+                <consumo>12</consumo>
+                <velmax>330</velmax>
+            </coche>
+            <coche>
+                <modelo>Agera RS</modelo>
+                <marca>Koenigsegg</marca>
+                <potencia>1360</potencia>
+                <puertas>2</puertas>
+                <precio>910000</precio>
+                <co2>414</co2>
+                <consumo>13.9</consumo>
+                <velmax>444</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+    <concesionario id="2">
+        <nombre>Jaracar Motor</nombre>
+        <ciudad>Cádiz</ciudad>
+        <coches>
+            <coche>
+                <modelo>Chiron</modelo>
+                <marca>Bugatti</marca>
+                <potencia>1500</potencia>
+                <puertas>2</puertas>
+                <precio>2650000</precio>
+                <co2>516</co2>
+                <consumo>21.4</consumo>
+                <velmax>458</velmax>
+            </coche>
+            <coche>
+                <modelo>Regera</modelo>
+                <marca>Koenigsegg</marca>
+                <potencia>1510</potencia>
+                <puertas>2</puertas>
+                <precio>924000</precio>
+                <co2>481</co2>
+                <consumo>14.7</consumo>
+                <velmax>450</velmax>
+            </coche>
+            <coche>
+                <modelo>Veyron Super Sport</modelo>
+                <marca>Bugatti</marca>
+                <potencia>1200</potencia>
+                <puertas>2</puertas>
+                <precio>2600000</precio>
+                <co2>574</co2>
+                <consumo>14.9</consumo>
+                <velmax>434</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+    <concesionario id="3">
+        <nombre>Garatge Oliveras S.L.</nombre>
+        <ciudad>Girona</ciudad>
+        <coches>
+            <coche>
+                <modelo>Speedtail</modelo>
+                <marca>McLaren</marca>
+                <potencia>1050</potencia>
+                <puertas>2</puertas>
+                <precio>1250000</precio>
+                <co2>384</co2>
+                <consumo>17.9</consumo>
+                <velmax>411</velmax>
+            </coche>
+            <coche>
+                <modelo>124 Spider</modelo>
+                <marca>Abarth</marca>
+                <potencia>170</potencia>
+                <puertas>2</puertas>
+                <precio>40020</precio>
+                <co2>148</co2>
+                <consumo>6.5</consumo>
+                <velmax>230</velmax>
+            </coche>
+            <coche>
+                <modelo>Camaro</modelo>
+                <marca>Chevrolet</marca>
+                <potencia>432</potencia>
+                <puertas>2</puertas>
+                <precio>45900</precio>
+                <co2>292</co2>
+                <consumo>10.5</consumo>
+                <velmax>300</velmax>
+            </coche>
+            <coche>
+                <modelo>ASX</modelo>
+                <marca>Mitsubishi</marca>
+                <potencia>150</potencia>
+                <puertas>5</puertas>
+                <precio>23700</precio>
+                <co2>167</co2>
+                <consumo>7.1</consumo>
+                <velmax>190</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+    <concesionario id="4">
+        <nombre>Torvalenjo S.L.</nombre>
+        <ciudad>Valencia</ciudad>
+        <coches>
+            <coche>
+                <modelo>Regera</modelo>
+                <marca>Koenigsegg</marca>
+                <potencia>1510</potencia>
+                <puertas>2</puertas>
+                <precio>924000</precio>
+                <co2>481</co2>
+                <consumo>14.7</consumo>
+                <velmax>450</velmax>
+            </coche>
+            <coche>
+                <modelo>Huracán 2014</modelo>
+                <marca>Lamborghini</marca>
+                <potencia>610</potencia>
+                <puertas>2</puertas>
+                <precio>230775</precio>
+                <co2>290</co2>
+                <consumo>12.5</consumo>
+                <velmax>325</velmax>
+            </coche>
+            <coche>
+                <modelo>Chiron</modelo>
+                <marca>Bugatti</marca>
+                <potencia>1500</potencia>
+                <puertas>2</puertas>
+                <precio>2650000</precio>
+                <co2>516</co2>
+                <consumo>21.4</consumo>
+                <velmax>458</velmax>
+            </coche>
+            <coche>
+                <modelo>Fiesta ST</modelo>
+                <marca>Ford</marca>
+                <potencia>200</potencia>
+                <puertas>5</puertas>
+                <precio>16560</precio>
+                <co2>140</co2>
+                <consumo>6.9</consumo>
+                <velmax>232</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+    <concesionario id="5">
+        <nombre>Autoforma S.A.</nombre>
+        <ciudad>La Rioja</ciudad>
+        <coches>
+            <coche>
+                <modelo>Veyron Super Sport</modelo>
+                <marca>Bugatti</marca>
+                <potencia>1200</potencia>
+                <puertas>2</puertas>
+                <precio>2600000</precio>
+                <co2>574</co2>
+                <consumo>14.9</consumo>
+                <velmax>434</velmax>
+            </coche>
+            <coche>
+                <modelo>Camaro</modelo>
+                <marca>Chevrolet</marca>
+                <potencia>432</potencia>
+                <puertas>2</puertas>
+                <precio>45900</precio>
+                <co2>292</co2>
+                <consumo>10.5</consumo>
+                <velmax>300</velmax>
+            </coche>
+            <coche>
+                <modelo>ASX</modelo>
+                <marca>Mitsubishi</marca>
+                <potencia>150</potencia>
+                <puertas>5</puertas>
+                <precio>23700</precio>
+                <co2>167</co2>
+                <consumo>7.1</consumo>
+                <velmax>190</velmax>
+            </coche>
+            <coche>
+                <modelo>Regera</modelo>
+                <marca>Koenigsegg</marca>
+                <potencia>1510</potencia>
+                <puertas>2</puertas>
+                <precio>924000</precio>
+                <co2>481</co2>
+                <consumo>14.7</consumo>
+                <velmax>450</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+    <concesionario id="6">
+        <nombre>ESTORAUTO S.L.</nombre>
+        <ciudad>Tarragona</ciudad>
+        <coches>
+            <coche>
+                <modelo>Speedtail</modelo>
+                <marca>McLaren</marca>
+                <potencia>1050</potencia>
+                <puertas>2</puertas>
+                <precio>1250000</precio>
+                <co2>384</co2>
+                <consumo>17.9</consumo>
+                <velmax>411</velmax>
+            </coche>
+            <coche>
+                <modelo>911</modelo>
+                <marca>Porsche</marca>
+                <potencia>385</potencia>
+                <puertas>2</puertas>
+                <precio>120458</precio>
+                <co2>241</co2>
+                <consumo>12</consumo>
+                <velmax>330</velmax>
+            </coche>
+        </coches>
+    </concesionario>
+</concesionarios>
