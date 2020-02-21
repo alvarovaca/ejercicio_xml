@@ -55,13 +55,20 @@ while True:
         print()
     elif opcion==3:
         print()
-        
-        print()
         print("------------------------")
         print("COCHES POR CONCESIONARIO")
         print("------------------------")
         print()
-        
+        while True:
+            concesionario=input("Introduce un concesionario: ")
+            while ValidarConcesionario(doc, concesionario)!=True and concesionario!=" ":
+                concesionario=input("El concesionario introducido no existe. Vuelve a intentarlo: ")
+            if concesionario==" ":
+                break
+            print()
+            for i in CochesPorConcesionario(doc, concesionario):
+                print(i)
+            print()
         print()
     elif opcion==4:
         print()
