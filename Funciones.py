@@ -20,8 +20,8 @@ def ContarConcesionarios(doc):
 #Ejercicio 3
 
 def CochesPorConcesionario(doc,concesionario):
-    modelos=doc.xpath("/concesionarios/concesionario/nombre[text()='%s']/../coches/coche/modelo/text()"%concesionario)
-    marcas=doc.xpath("/concesionarios/concesionario/nombre[text()='%s']/../coches/coche/marca/text()"%concesionario)
+    modelos=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/modelo/text()"%concesionario)
+    marcas=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca/text()"%concesionario)
     coches=[]
     for elem,elem1 in zip(modelos,marcas):
         coches.append(elem+elem1)
