@@ -94,7 +94,15 @@ while True:
         print("")
         print("-------------------")
         print()
-        
+        for i in ListarConcesionarios(doc):
+            print(i)
+        print()
+        concesionario=input("Introduce un concesionario de los mostrados: ")
+        for i in CochesPorConcesionario(concesionario,doc):
+            print(i)
+        print()
+        coche=input("Introduce un coche de los mostrados: ")
+        primero=GuardarDatos()
         print()
     elif opcion==6:
         print()

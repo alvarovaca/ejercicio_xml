@@ -32,11 +32,7 @@ def CochesPorConcesionario(doc,concesionario):
     coches=[]
     for elem,elem1 in zip(modelos,marcas):
         coches.append(elem1+" "+elem)
-    cochesnorep=[]
-    for i in coches:
-        if i not in cochesnorep:
-            cochesnorep.append(i)
-    return cochesnorep
+    return coches
 
 #Ejercicio 4.
 
@@ -55,6 +51,23 @@ def EnQueConcesionario(modelo,marca,doc):
             nombres.append(i.xpath("./nombre/text()"))
             ciudades.append(i.xpath("./ciudad/text()"))
     return nombres,ciudades
+
+#Ejercicio 5.
+
+def ListarConcesionarios(doc):
+    concesionarios=doc.xpath("/concesionarios/concesionario/nombre/text()")
+
+def GuardarDatos(coche,concesionario,doc):
+    potencia=doc.xpath("//potencia/text()")
+    puertas=doc.xpath("//puertas/text()")
+    precio=doc.xpath("//precio/text()")
+    co2=doc.xpath("//co2/text()")
+    consumo=doc.xpath("//consumo/text()")
+    velocidad=doc.xpath("//velmax/text()")
+    return potencia, puertas, precio, co2, consumo, velocidad
+
+def CompararCoches(coche1,coche2,doc):
+
 
 #Funciones extra.
 
