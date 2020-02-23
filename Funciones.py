@@ -32,7 +32,11 @@ def CochesPorConcesionario(doc,concesionario):
     coches=[]
     for elem,elem1 in zip(modelos,marcas):
         coches.append(elem1+" "+elem)
-    return coches
+    cochesnorep=[]
+    for i in coches:
+        if i not in cochesnorep:
+            cochesnorep.append(i)
+    return cochesnorep
 
 #Ejercicio 4.
 
