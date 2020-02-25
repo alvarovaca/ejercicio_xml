@@ -145,42 +145,42 @@
             <coche>
                 <modelo>Regera</modelo>
                 <marca>Koenigsegg</marca>
-                <potencia>1510</potencia>
+                <potencia>1608</potencia>
                 <puertas>2</puertas>
-                <precio>924000</precio>
-                <co2>481</co2>
-                <consumo>14.7</consumo>
-                <velmax>450</velmax>
+                <precio>1005100</precio>
+                <co2>501</co2>
+                <consumo>15.8</consumo>
+                <velmax>487</velmax>
             </coche>
             <coche>
                 <modelo>Huracán 2014</modelo>
                 <marca>Lamborghini</marca>
-                <potencia>610</potencia>
+                <potencia>690</potencia>
                 <puertas>2</puertas>
-                <precio>230775</precio>
-                <co2>290</co2>
-                <consumo>12.5</consumo>
-                <velmax>325</velmax>
+                <precio>250415</precio>
+                <co2>302</co2>
+                <consumo>14.1</consumo>
+                <velmax>348</velmax>
             </coche>
             <coche>
                 <modelo>Chiron</modelo>
                 <marca>Bugatti</marca>
-                <potencia>1500</potencia>
+                <potencia>1670</potencia>
                 <puertas>2</puertas>
-                <precio>2650000</precio>
-                <co2>516</co2>
-                <consumo>21.4</consumo>
-                <velmax>458</velmax>
+                <precio>2850000</precio>
+                <co2>601</co2>
+                <consumo>24.2</consumo>
+                <velmax>511</velmax>
             </coche>
             <coche>
                 <modelo>Fiesta ST</modelo>
                 <marca>Ford</marca>
-                <potencia>200</potencia>
+                <potencia>250</potencia>
                 <puertas>5</puertas>
-                <precio>16560</precio>
-                <co2>140</co2>
-                <consumo>6.9</consumo>
-                <velmax>232</velmax>
+                <precio>23715</precio>
+                <co2>172</co2>
+                <consumo>9.5</consumo>
+                <velmax>267</velmax>
             </coche>
         </coches>
     </concesionario>
@@ -191,42 +191,42 @@
             <coche>
                 <modelo>Veyron Super Sport</modelo>
                 <marca>Bugatti</marca>
-                <potencia>1200</potencia>
+                <potencia>1350</potencia>
                 <puertas>2</puertas>
-                <precio>2600000</precio>
-                <co2>574</co2>
-                <consumo>14.9</consumo>
-                <velmax>434</velmax>
+                <precio>2650000</precio>
+                <co2>608</co2>
+                <consumo>17.1</consumo>
+                <velmax>483</velmax>
             </coche>
             <coche>
                 <modelo>Camaro</modelo>
                 <marca>Chevrolet</marca>
-                <potencia>432</potencia>
+                <potencia>398</potencia>
                 <puertas>2</puertas>
-                <precio>45900</precio>
-                <co2>292</co2>
-                <consumo>10.5</consumo>
-                <velmax>300</velmax>
+                <precio>40900</precio>
+                <co2>261</co2>
+                <consumo>8.9</consumo>
+                <velmax>264</velmax>
             </coche>
             <coche>
                 <modelo>ASX</modelo>
                 <marca>Mitsubishi</marca>
-                <potencia>150</potencia>
+                <potencia>185</potencia>
                 <puertas>5</puertas>
-                <precio>23700</precio>
-                <co2>167</co2>
-                <consumo>7.1</consumo>
-                <velmax>190</velmax>
+                <precio>27105</precio>
+                <co2>192</co2>
+                <consumo>9.1</consumo>
+                <velmax>222</velmax>
             </coche>
             <coche>
                 <modelo>Regera</modelo>
                 <marca>Koenigsegg</marca>
-                <potencia>1510</potencia>
+                <potencia>1400</potencia>
                 <puertas>2</puertas>
-                <precio>924000</precio>
-                <co2>481</co2>
-                <consumo>14.7</consumo>
-                <velmax>450</velmax>
+                <precio>898152</precio>
+                <co2>460</co2>
+                <consumo>13.1</consumo>
+                <velmax>422</velmax>
             </coche>
         </coches>
     </concesionario>
@@ -237,22 +237,22 @@
             <coche>
                 <modelo>Speedtail</modelo>
                 <marca>McLaren</marca>
-                <potencia>1050</potencia>
+                <potencia>1150</potencia>
                 <puertas>2</puertas>
-                <precio>1250000</precio>
-                <co2>384</co2>
-                <consumo>17.9</consumo>
-                <velmax>411</velmax>
+                <precio>1370000</precio>
+                <co2>437</co2>
+                <consumo>19.6</consumo>
+                <velmax>437</velmax>
             </coche>
             <coche>
                 <modelo>911</modelo>
                 <marca>Porsche</marca>
-                <potencia>385</potencia>
+                <potencia>416</potencia>
                 <puertas>2</puertas>
-                <precio>120458</precio>
-                <co2>241</co2>
-                <consumo>12</consumo>
-                <velmax>330</velmax>
+                <precio>138715</precio>
+                <co2>267</co2>
+                <consumo>15.7</consumo>
+                <velmax>361</velmax>
             </coche>
         </coches>
     </concesionario>
