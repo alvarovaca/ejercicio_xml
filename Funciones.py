@@ -56,6 +56,7 @@ def EnQueConcesionario(modelo,marca,doc):
 
 def ListarConcesionarios(doc):
     concesionarios=doc.xpath("/concesionarios/concesionario/nombre/text()")
+    return concesionarios
 
 def ListarMarcas(concesionario,doc):
     marcas=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca/text()"%concesionario)
@@ -63,9 +64,11 @@ def ListarMarcas(concesionario,doc):
     for i in marcas:
         if i not in marcassinrepetir:
             marcassinrepetir.append(i)
+    return marcassinrepetir
 
 def ListarCochesPorMarca(marca,concesionario,doc):
-    coches=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca[text()='%i']/text()"%(concesionario,marca))
+    coches=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca[text()='%i']/text()"%concesionario%marca)
+    return coches
 
 def GuardarDatos(marca,modelo,concesionario,doc):
     potencia=doc.xpath("/concesionarios/concesionario[nombre/text='%s'/coches/coche[marca='%i']/../coche[modelo='%j']/potencia/text()")
@@ -84,4 +87,8 @@ def ValidarConcesionario(doc,concesionario):
 
 def ValidarSioNo(siono):
     if siono=="S" or siono=="N":
+        return True
+
+def ValidarMarca(marca,marcas):
+    if marca in marcas:
         return True
