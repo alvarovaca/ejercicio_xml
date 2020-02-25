@@ -57,17 +57,24 @@ def EnQueConcesionario(modelo,marca,doc):
 def ListarConcesionarios(doc):
     concesionarios=doc.xpath("/concesionarios/concesionario/nombre/text()")
 
-def GuardarDatos(coche,concesionario,doc):
-    potencia=doc.xpath("//potencia/text()")
+def ListarMarcas(concesionario,doc):
+    marcas=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca/text()"%concesionario)
+    marcassinrepetir=[]
+    for i in marcas:
+        if i not in marcassinrepetir:
+            marcassinrepetir.append(i)
+
+def ListarCochesPorMarca(marca,concesionario,doc):
+    coches=doc.xpath("/concesionarios/concesionario[nombre/text()='%s']/coches/coche/marca[text()='%i']/text()"%(concesionario,marca))
+
+def GuardarDatos(marca,modelo,concesionario,doc):
+    potencia=doc.xpath("/concesionarios/concesionario[nombre/text='%s'/coches/coche[marca='%i']/../coche[modelo='%j']/potencia/text()")
     puertas=doc.xpath("//puertas/text()")
     precio=doc.xpath("//precio/text()")
     co2=doc.xpath("//co2/text()")
     consumo=doc.xpath("//consumo/text()")
     velocidad=doc.xpath("//velmax/text()")
     return potencia, puertas, precio, co2, consumo, velocidad
-
-def CompararCoches(coche1,coche2,doc):
-
 
 #Funciones extra.
 
