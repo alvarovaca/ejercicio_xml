@@ -10,7 +10,7 @@ print("1. Listar el modelo y marca de todos los coches que se encuentran a la ve
 print("2. Contar el número de concesionarios que vendan más de 3 coches y en caso de así quererlo, mostrar también sus nombres.")
 print("3. Pedir por teclado nombres de concesionarios y listar el nombre de los coches que venden, hasta que se introduzca un espacio.")
 print("4. Pedir por teclado un modelo y una marca y mostrar en qué concesionario se puede comprar, además de la ciudad de dicho concesionario.")
-print("5. Seleccionar dos coches distintos, mostrando las ventajas de uno sobre el otro.")
+print("5. Seleccionar dos coches distintos mediante un menú, para posteriormente mostrar las ventajas de uno sobre el otro.")
 print("6. Salir del menú.")
 print("----------------------------------------------------------------------------------------------------------------------------------------------")
 print()
@@ -90,25 +90,49 @@ while True:
         print()
     elif opcion==5:
         print()
-        print("--------------------")
-        print("COMPARADOR DE COCHES")
-        print("--------------------")
+        print("------------------")
+        print("SELECCIONAR COCHES")
+        print("------------------")
+        for contador in range(1,3):
+            print()
+            for i in ListarConcesionarios(doc):
+                print(i)
+            print()
+            concesionario=input("Introduce un concesionario de los mostrados: ")
+            while ValidarConcesionario(doc,concesionario)!=True:
+                concesionario=input("El concesionario introducido no existe. Vuelve a intentarlo: ")
+            print()
+            for i in ListarMarcas(concesionario,doc):
+                print(i)
+            print()
+            marca=input("Introduce una marca de las mostradas: ")
+            while ValidarMarca(marca,ListarMarcas(concesionario,doc))!=True:
+                marca=input("La marca introducida no existe. Vuelve a intentarlo: ")
+            modelos,potencias,puertas,precios,co2s,consumos,velocidades = ListarCochesPorMarca(marca,concesionario,doc)
+            for elem,elem1,elem2,elem3,elem4,elem5,elem6 in zip(modelos,potencias,puertas,precios,co2s,consumos,velocidades):
+                print()
+                print(elem)
+                print()
+                print("Su potencia es de", elem1, "CV.")
+                print("Tiene", elem2, "puertas.")
+                print("Su precio es de", elem3, "€.")
+                print("Su emisión de CO2 es de", elem4, "gr/km.")
+                print("Su consumo es de", elem5, "litros/100km.")
+                print("Su velocidad máxima es de", elem6, "km/h.")
+            print()
+            modelo=input("Introduce un modelo de los mostrados: ")
+            while ValidarModelo(modelo,ListarModelos(marca,concesionario,doc))!=True:
+                modelo=input("El modelo introducido no existe. Vuelve a intentarlo: ")
+            if contador == 1:
+                primero=GuardarDatos(marca,modelo,concesionario,doc)
+            if contador == 2:
+                segundo=GuardarDatos(marca,modelo,concesionario,doc)
         print()
-        for i in ListarConcesionarios(doc):
-            print(i)
+        print("------------------")
+        print("RESULTADOS FINALES")
+        print("------------------")
         print()
-        concesionario=input("Introduce un concesionario de los mostrados: ")
-        while ValidarConcesionario(doc,concesionario)!=True:
-            concesionario=input("El concesionario introducido no existe. Vuelve a intentarlo: ")
-        print()
-        for i in ListarMarcas(concesionario,doc):
-            print(i)
-        print()
-        marca=input("Introduce una marca de las mostradas: ")
-        while ValidarMarca(marca,ListarMarcas(concesionario,doc))!=True:
-            marca=input("La marca introducida no existe. Vuelve a intentarlo: ")
-        print()
-        for i in ListarCochesPorMarca(marca,concesionario,doc):
+        for i in CompararCoches(primero,segundo):
             print(i)
         print()
     elif opcion==6:
